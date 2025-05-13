@@ -89,6 +89,8 @@
             "돈까스",
             "양년치킨",
             "후라이드치킨",
+            "막국수",
+            "족발",
             "닭강정",
             "잔치국수",
             "비빔국수",
@@ -110,7 +112,8 @@
             "큐브스테이크덮밥",
             "비빔밥",
             "제육볶음",
-            "육회"
+            "육회",
+            "불고기버거"
         ];
 
         // 메뉴를 보여줄 위치를 가져옵니다. (아직 안 배움)
@@ -123,9 +126,9 @@
             //    Math.random()을 사용하여 0부터 menus.length - 1까지의 정수를 생성하세요.
             const randomIndex = Math.floor(Math.random() * menus.length);
             // 3. menus 배열에서 랜덤으로 선택된 인덱스를 사용하여 메뉴를 가져옵니다.
-            const selectedMenu = menus[0];
+            const selectedMenu = menus[randomIndex];
             // 4. 선택된 메뉴를 화면에 출력하세요.
-            menuDisplay.textContent = `🍽 오늘의 메뉴는 ??? 입니다!`;
+            menuDisplay.textContent = `🍽 오늘의 메뉴는 ${selectedMenu} 입니다!`;
         });
     </script>
 </body>
